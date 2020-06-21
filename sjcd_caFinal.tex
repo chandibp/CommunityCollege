@@ -1,0 +1,266 @@
+% Exam Template for San Jacinto Community College Math Department courses
+%Copyright@Chandi Bhandari
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% These lines can probably stay unchanged, although you can remove the last
+% two packages if you're not making pictures with tikz.
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage{graphicx}
+
+\graphicspath{ {./images/} }
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Math 1314 College Algebra}
+\newcommand{\term}{Fall 2018}
+\newcommand{\examnum}{Final Exam}
+\newcommand{\examdate}{September, 2018}
+\newcommand{\timelimit}{90 Minutes}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{3.2in} r l}
+\textbf{\class} & \textbf{\term} & \textbf{\examnum}\\
+\textbf{Class Time:} & \textbf{Name (Print):}  \makebox[1.2in]{\hrulefill}\\
+%\textbf{Time: \timelimit} % & \makebox[2in]{\hrulefill}
+
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+\hfill
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For the further information 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+\addpoints
+\question Find the product $(5+3i)(2-i)$. 
+
+\vspace{5cm}
+
+\addpoints
+\question Solve the following equation by the indicated techniques
+
+\begin{parts}
+	\part  $3x^2+5x+2=0$
+	\vspace{6cm}
+	\part  $x^2-6x+10=0$ 
+		\vspace{8cm}
+		\part Find the Through (-1,2) and perpendicular to $y=2x-3$.
+	\vspace{8cm}
+	
+\end{parts}
+
+
+
+\newpage
+\addpoints
+\question Word problems
+
+
+\noaddpoints % If you remove this line, the grading table will show 20 points for this problem.
+\begin{parts}
+\part A coffee manufacturer wants to market a new blend of coffee that sells for $\$3.90$ per pound by mixing two coffee that sells for $\$2.75$ and $\$5$ per pound, respectively. What amounts of each coffee should be blended to obtain the desire mixture of 100 pound?
+\vspace{10cm}
+\part Find the future value and interest earned if $\$8000$ is deposited for 9 years at $3\%$ interest compounded quarterly. (Hint: use the formula $A=P(1+\frac{R}{n})^{nT} and I=A-P$)
+\end{parts}
+
+\newpage
+\addpoints
+\question Solve
+
+
+\noaddpoints % If you remove this line, the grading table will show 20 points for this problem.
+\begin{parts}
+	\part \[\frac{4}{x-2}-\frac{-3}{x
+		+5}=\frac{7}{(x+5)(x-2)}\]
+\vspace{8cm}
+	\part  \[8-4(2-x)\leq -2x\]
+
+	\vspace{8cm}
+	\part \[\left | 3t-2\right |\leq 4\]
+	\vspace{8cm}
+
+\end{parts}
+
+
+\vspace{8cm}
+%\newpage
+
+\addpoints
+\question  
+\begin{parts}
+	
+	\part  Find the value of $f(-5),f(0),f(3)$ and graph the following piecewise function:
+	\begin{center}
+		\[f(x)= \begin{cases} 
+		\frac{1}{x} & for \quad  x< 0 \\
+		\sqrt[3]{x} & for \quad x\geq 0 
+		\end{cases}
+		\]
+	\end{center}
+	
+	\vspace{8cm}
+	Graph the following function. Also give the domain and range
+		\part $f(x)=-2(x+1)^4+1$
+		\vspace{8cm}
+		\part $f(x)=-(x-5)^5+4$
+		\vspace{8cm}
+		\part  \[f(x)=\frac{1}{x-4}+5\]
+		\vspace{8cm}
+		\part  \[f(x)=3\sqrt[3]{x-4}+3\]
+		\vspace{8cm}
+		\part \[f(x)=2^{x-1}+2\]
+		\vspace{8cm}
+		\part  \[f(x)=\log_3(x-1)+2\]
+		
+\end{parts}
+\vspace{9cm}
+\addpoints
+\question For the following function 
+\[f(x)=(x-5)^3(x+4)^2\] find
+
+\begin{parts}
+	\part Find the real zeros and their multiplicity
+	\vspace{2cm}
+	\part Determine where graph cross or touches (bounces back) at x-axis at the x-intercepts. 
+	\vspace{3cm}
+	\part Determine where graph cross or touches (bounces back) at x-axis at the x-intercepts.
+	\vspace{2cm}
+	\part Find the number of maximum turning points
+	\vspace{2cm}
+	\part Determine  the end behavior
+	\vspace{2cm}
+	\part Sketch the graph
+\end{parts}
+
+\vspace{9cm}
+\addpoints
+\question 
+
+Solve the system by using inverse matrix method.
+\begin{align}
+\nonumber
+x+3y=&5 \\ 
+\nonumber
+2x-3y=&-8   
+\end{align}
+Note that 
+\begin{align}
+\nonumber
+\begin{bmatrix}
+1 &   3&  \\
+2 &   -3&  
+\end{bmatrix}^{-1}=
+\begin{bmatrix}
+\frac{1}{3} &   \frac{1}{3}&  \\
+\frac{2}{9} &   -\frac{1}{9}&  
+\end{bmatrix}
+\end{align}
+
+\newpage
+\addpoints
+\question  
+\begin{parts}
+	\part Use the remainder theorem to find the remainder when $f(x)=x^3-5x^2+3x+1$ is divided by $x-1$. \\
+	
+	\vspace{5cm}
+	\part Using the above information from 1 a) and factor theorem check that whether $x-1$ is a factor of  $f(x)=x^3-5x^2+3x+1$ or not? 
+\end{parts}
+\vspace{4cm}
+\addpoints
+\question For the polynomial \[ f(x)= x^3-x^2-10x-8\] 
+\begin{parts} 
+	\part Find all the potential rational zeros of $f(x)$.
+	\vspace{4cm}
+	\part By using the Descarte's Rule of sign how many positive and how many and how many negative solution $f(x)$ has. 
+	\vspace{9cm}
+	
+\end{parts}
+
+\vspace{9cm}
+\addpoints
+\question  
+\begin{parts} 
+	\part Find the end behavior of the following function \[f(x)=10x^6-x^5+2x-2\]
+	\vspace{4cm}
+	\part For the following one-one function find the $f^{-1}$ and Also give the $\bf domain$ of $f^{-1}$.\[f(x)=\frac{x+2}{x-2}\] 
+\end{parts}
+
+\vspace{9cm}
+\addpoints
+\question Find the zeros and their multiplicity of the following polynomial and sketch the graph \[f(x)=x^2(x-5)(x+3)(x-1)\] 
+
+
+\vspace{9cm}
+\addpoints
+\question  For the following function  
+$f(x)=\frac{3x}{x^2-x-2}$ 
+(Hint: factorize the denominator as (x-2)(x+1))
+\begin{parts}
+	\part Domain
+	\vspace{1cm}
+	\part x-intercept
+	\vspace{2cm}
+	\part y-intercept
+	\vspace{2cm}
+	\part Vertical asymptotes
+	\vspace{3cm}
+	\part Horizontal or Oblique asymptotes
+	\vspace{2cm}
+	\part Sketch the graph
+\end{parts}
+
+\vspace{9cm}
+
+\addpoints
+\question Solve the following
+
+\begin{parts}
+	\part \[4^{x-2}=2^{3x+3}\]
+	\vspace{2cm}
+	\part \[\log_2(x^3+65)=0\]
+	\vspace{3cm}
+	\part \[\ln x+\ln x^2=3\]
+	\vspace{2cm}
+\end{parts}
+
+\vspace{8cm}
+
+\question solve \[\log_2(2x-3)+\log_2(x+1)=1\] 
+
+\vspace{6cm}
+\question Solve the system of equation by matrix method
+\begin{align}
+\nonumber
+x+y=&8 \\ 
+\nonumber
+x-y=&4   
+\end{align}
+\end{questions}
+\end{document}
