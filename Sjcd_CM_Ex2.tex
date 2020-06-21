@@ -1,0 +1,158 @@
+% Exam Template for San Jacinto Community College Math Department courses
+%Copyright@Chandi Bhandari
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% These lines can probably stay unchanged, although you can remove the last
+% two packages if you're not making pictures with tikz.
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+\graphicspath{ {./images/} }
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Math 1332 Contemporary Math}
+\newcommand{\term}{Fall 2018}
+\newcommand{\examnum}{Exam II}
+\newcommand{\examdate}{Sept, 2018}
+\newcommand{\timelimit}{90 Minutes}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{3.2in} r l}
+\textbf{\class} & \textbf{\term} & \textbf{\examnum}\\
+\textbf{G-Number-} & \textbf{Name (Print):}  \makebox[1.2in]{\hrulefill}\\
+%\textbf{Time: \timelimit} % & \makebox[2in]{\hrulefill}
+
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+\hfill
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For the further information 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+% Basic question
+\addpoints
+\question[4] Define the following with example: 
+\begin{parts}
+	\part Correlation
+	\vspace{4cm}
+	\part Scatter plot
+\end{parts}
+\vspace{5cm}
+
+\question[5] Draw the scatter plot showing 
+\begin{parts}
+	\part Positive Correlation
+	\vspace{5cm}
+	\part Negative Correlation
+	\vspace{4cm}
+\end{parts}
+%\newpage
+\addpoints
+\question[8] Define the following with example: 
+\begin{parts}
+	\part Population and Sample
+	\vspace{4cm}
+	\part Sampling
+	\vspace{4cm} 
+	\part Simple random sampling, Systematic sampling and Stratified random sampling.
+	\vspace{4cm}
+	\part Treatment and Control group
+\end{parts}
+\newpage
+\addpoints
+\question[6] Make a frequency table and then find cumulative  and relative frequency for the following data\\
+A, C, D, F, H, C, C, C, A, C, H, D, D, C, A, F, H, H, H, H, A, A, D, D, A, A, C, D. 
+\vspace{10cm}
+\addpoints
+\question[15] Make a frequency table and relative frequency also present them in  Bar Diagram and Pie-chart for the following data\\
+13, 4, 7, 11, 4, 13, 13, 3, 7, 3, 13, 13, 7, 7, 7, 8, 4, 13, 3, 8, 11, 4, 13, 7, 7, 4, 13, 11, 11, 7, 8, 4, 13, 4, 3, 7, 3, 4, 8, 13, 11, 8,13, 11, 4, 4, 4, 13, 3, 8, 4, 7, 13,11, 3, 7, 3, 13. 
+\vspace{10cm}
+\question[6] If interest rates stay at $4\%$ APR and I continue to make my monthly $\$25$ deposit into my retirement plan, how much total money I would have after 30 years. 
+\vspace{10cm}
+
+\question[8] Compute the total and Annual returns for: you paid $\$8000$ for a municipal bond. When it matures after 20 years, you received $\$12,500$.  
+\vspace{10cm}
+\question[6] Your goal is to create a college fund for your child. Suppose you find a fund that offers an APR of $5\%$ How much should you deposit monthly to accumulate $\$170,000$ in 15 years? 
+\vspace{10cm}
+\question[10] Compute the total amount paid and what percent is principal and what percentage is interest paid when you borrowed $\$100,000$ for a period of 30 years at a fixed APR $5.5\%$.  
+\vspace{10cm}
+\question[15] Compare the monthly payment, Total payment for the two different option a fixed loan amount. Compare the pros and Cons of each loan option.\\
+You need $\$400,000$ loan. \\
+Option 1: a 30-year loan at an APR of $8\%$\\
+Option 2: a 15-year loan at an APR of $7.5\%$ 
+\newpage
+\question [10] Convert the following data into continuous data and express them in the histogram \begin{table}[h]                           
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\multicolumn{2}{c|}{\textbf{Age of Academy Award-wining Male actor at Time of award}} \\ \hline
+		
+		Age    &   Number of actors         \\ \hline
+		20-29 &   1             \\ \hline          
+		30-39    &   11  \\ \hline
+		40-49          &  14          \\ \hline
+		50-59  &   13              \\ \hline
+		60-69       &  6     \\ \hline
+		70-79          &   2         \\ \hline
+		
+	\end{tabular}
+	\caption{Oscar-winning Male actors}
+	\label{tab:msg1}                            
+	
+\end{table}\\
+\newpage
+
+\question[7] The following data represents the number of boys and girls attended at San Jacinto College from 2010 to 2015 in College Comtemporary math classes. Make a multiple bar diagram (single or double) for these data, with vertical axes representing the number of students running from 1 to 15.  \begin{table}[h]                           
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{c|}{\textbf{Number of boys and girls from 2010-2015}} \\ \hline
+		
+		Academic year    &   Number of boys   &   Number of girls      \\ \hline
+		2010 &   12 &   14             \\ \hline          
+		2011    &   9 &   16  \\ \hline
+		2012       &  14 &   10           \\ \hline
+		2013  &   13 &   8              \\ \hline
+		2014       &  6  &   10   \\ \hline
+		2015        &   6 &   12          \\ \hline
+		
+	\end{tabular}
+	\caption{Students log table in Contemporary math class}
+	\label{tab:msg1}                            
+	
+\end{table}
+\vspace{10cm}
+\addpoints
+\question[6 Bonus:] Suppose that on the January 1, 2018 you had a balance of $\$10,000$ on Chase Credit Card which charges APR $20\%$, you want to paid the balance off in 5 years. Then how much is your monthly payment. 
+\end{questions}
+\end{document}

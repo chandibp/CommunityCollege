@@ -1,0 +1,146 @@
+% Exam Template for San Jacinto Community College Math Department courses
+%Copyright@Chandi Bhandari
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% These lines can probably stay unchanged, although you can remove the last
+% two packages if you're not making pictures with tikz.
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+\graphicspath{ {./images/} }
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Math 1332 Contemporary Math}
+\newcommand{\term}{Fall 2018}
+\newcommand{\examnum}{Exam III}
+\newcommand{\examdate}{Sept, 2018}
+\newcommand{\timelimit}{90 Minutes}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{3.2in} r l}
+\textbf{\class} & \textbf{\term} & \textbf{\examnum}\\
+\textbf{Class time:} & \textbf{Name (Print):}  \makebox[1.2in]{\hrulefill}\\
+%\textbf{Time: \timelimit} % & \makebox[2in]{\hrulefill}
+
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+\hfill
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For the further information 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+% Basic question
+\addpoints
+\question[20] Find the mean, median,and mode for following data and also find outliers if exits: 
+\begin{parts}
+	\part 7, 3, 3, 11, 12, 3, 4, 14, 6, 4, 3, 53, 4,14, 6
+	\vspace{6cm}
+	\part 53, 52, 75, 62, 68, 58, 49, 49
+\end{parts}
+\vspace{9cm}
+
+\newpage
+\question[20] Find the five point summary, range and standard deviation of the following.
+\begin{parts}
+	\part 98, 92, 95, 87, 96, 90, 65
+	\vspace{9cm}
+	\part 12, 7, 9, 10, 7, 8
+	\vspace{9cm}
+\end{parts}
+\newpage
+\addpoints
+\question[5] Find the probability distribution table for the sample space when tossing two coins.
+\vspace{8cm}
+\addpoints
+\question[10] Use theoretical method to compute the probability when tossing two coins: 
+\begin{parts}
+	\part Exactly two head
+	\vspace{4cm}
+	\part Exactly one Tail
+	\vspace{4cm} 
+	\part At least one head.
+	\vspace{4cm}
+	\part No head
+\end{parts}
+
+\vspace{9cm}
+\addpoints
+\question[10]  When forming a committee of three members consisting boys and girls then find 
+\begin{parts}
+	\part All girs
+	\vspace{4cm}
+	\part Exactly two boys
+	\vspace{4cm} 
+	\part At least two boys
+	\vspace{4cm}
+	\part No girls
+	
+\end{parts}
+\vspace{10cm}
+
+\question[10]  When rolling a die in one hand and tossing a coin in another hand then what is the probability of
+\begin{parts}
+	\part P(5 and H)
+	\vspace{4cm}
+	\part P(Even numbers and T)
+		
+\end{parts}
+\vspace{10cm}
+
+\question[10] There are 12 tennis balls in a balls of two different colors 6 red and 4 White balls. John wants to take out two balls from that bag then what the the following probability 
+\begin{parts}
+	\part P(Red and Red)=P(R and R)
+	\vspace{4cm}
+	\part P(White and Red)=P(W and R)
+	
+\end{parts}
+\vspace{10cm}
+
+\addpoints
+\question[15]  There are 20 cards in a deck of card numbering from 1 through 20 that is $S=\{1, 2, 3, ...,20\}$. And Events A={Even numbers}, B={multiple of 5} and C={3,7, 13} then find the following probability
+\begin{parts}
+	\part P(A or B)
+	\vspace{4cm}
+	\part P(A or C)
+	\vspace{4cm} 
+	\part P(B or C)
+	
+\end{parts}
+
+
+
+\vspace{10cm}
+\addpoints
+\question[5:] (Bonus) Make a probability distribution table for the number boys in a family of three members. 
+\end{questions}
+\end{document}

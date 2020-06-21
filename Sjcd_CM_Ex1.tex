@@ -1,0 +1,206 @@
+% Exam Template for San Jacinto Community College Math Department courses
+%Copyright@Chandi Bhandari
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% These lines can probably stay unchanged, although you can remove the last
+% two packages if you're not making pictures with tikz.
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage{graphicx}
+\usepackage{venndiagram}
+\graphicspath{ {./images/} }
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Math 1332 Contemporary Math}
+\newcommand{\term}{Fall 2018}
+\newcommand{\examnum}{Exam I}
+\newcommand{\examdate}{Sept, 2018}
+\newcommand{\timelimit}{90 Minutes}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{3.2in} r l}
+\textbf{\class} & \textbf{\term} & \textbf{\examnum}\\
+\textbf{G-Number-} & \textbf{Name (Print):}  \makebox[1.2in]{\hrulefill}\\
+%\textbf{Time: \timelimit} % & \makebox[2in]{\hrulefill}
+
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+\hfill
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For the further information 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+% Basic question
+\addpoints
+\question[12] Identify the premises, conclusion, and the type of Fallacies 
+
+\begin{parts}
+	\part I ate oysters for dinner and later that night I had a nightmare. Oyster caused my nightmare
+\vspace{5cm}
+	\part My uncle never drank alcohol and lived to be 93 years old. That's how I know that avoiding alcohol leads to greater longevity.
+	\vspace{5cm}
+	\part Apple's iPhones outsell all other smart phones, so they must be the best smart phones on the market.  
+\end{parts}
+
+\vspace{5cm}
+%\newpage
+\addpoints
+\question[20] For the two statements p, q find the following logical argument truth table for Negation:  not p ($\sim{p}$), Conjunction: p and q ($p\land q$), Disjunction: p or q ($p\lor q$), Conditional: if p then q ($p\implies q$), Inverse: if not p then not q ($\sim{p}\implies \sim q$), Converse: if q then p ($q\implies p$), Contrapositive: if not q then not p ($\sim{q}\implies \sim p$) .
+
+
+
+ 
+\newpage
+%\newpage
+\addpoints
+\question[15] A movie critics reviewed 36 films: 12 were documentaries and 24 were feature films. She gave favorable reviews to 18 of the 24 were feature films. She gave favorable reviews to 8 of the documentaries and unfavorable reviews to 6 of the feature films.
+\begin{parts}
+\part  Make a two-way table summarizing the reviews.
+\vspace{5cm}
+\part  Make a Venn diagram from the table in part (a).
+\vspace{5cm}
+\part How many documentaries received unfavorable reviews? 
+\vspace{5cm}
+\part How many feature films received favorable reviews?
+\end{parts}
+
+\vspace{15cm}
+\addpoints
+\question [10] Following is the Venn-diagram of the people at conference. Use the Venn Diagram to answer the following questions
+
+\begin{venndiagram3sets}[labelOnlyAB={20},
+	labelOnlyAC={8},
+	labelOnlyBC={16},
+	labelABC={11},
+	labelOnlyA={4},
+	labelOnlyC={6},
+	labelOnlyB={9},
+	labelNotABC={3},
+	radius=3cm,
+	overlap=2.5cm]
+	\setpostvennhook
+	{
+		\draw[<-] (labelA) -- ++(135:3cm) node[above] {Woman};
+		\draw[<-] (labelB) -- ++(45:3cm) node[above] {College degree};
+		\draw[<-] (labelC) -- ++(-90:3cm) node[below] {Currently employed};
+	}
+\end{venndiagram3sets}
+
+
+
+
+\begin{parts}
+\part  How many people at the conference are employed men with a college degree?
+\vspace{1cm}
+\part  How many people at the conference are employed men?
+\vspace{1cm}
+\part   How many people at the conference are unemployed woman?
+\vspace{1cm}
+\part   How many women are at the conference?
+\vspace{1cm}
+
+\end{parts}
+
+
+
+\newpage
+\addpoints
+\question[10] Compute the compounded interest for the following problems.
+
+
+\noaddpoints % If you remove this line, the grading table will show 20 points for this problem.
+\begin{parts}
+	\part[5] $\$5000$ is invested for 10 years with an APR of $2\%$ and quarterly compounding.  
+
+\vspace{10cm}
+\part[5] $\$4000$ is invested for 20 years with an APR of $2\%$ and monthly compounding.  
+\end{parts}
+\vspace{10cm}
+\question[10] For the following income and expenses compute the Net Cash flow: \\
+Income:\\
+Part-time Job = $\$650$ per month\\
+College fund from grandparents: $\$400$ per month\\
+Scholarship: $\$6000$ per year. \\
+
+Expenses: \\
+Rent: $\$500$ per month.\\
+Groceries: $\$60 $ per week.\\ 
+Tuition and Fees: $\$3600$ twice a year.\\
+Incidentals: $\$120$ per week \\
+
+\vspace{10cm}
+\question[15] You have a choice of two health insurance plans: \\ 
+Plan A:\\
+Monthly premium:   $\$300$ \\
+Annual deductible:   $\$5000$ \\
+Office visit  co-payment: $\$25$. \\
+Emergency room co-payment: $\$500$ \\
+Surgical operations co-payments: $\$250$ per year. \\
+
+Plan B:\\
+A annual premium:   $\$700$ \\
+Annual deductible:   $\$1500$ \\
+Office visit  co-payment: $\$25$\\ 
+Emergency room co-payment: $\$200$ \\
+Surgical operations co-payments: no co-payment.\\
+
+Suppose that during a one-year period your family received the following medical bills. \\
+Service and Costs are as following: \\
+Jan. 23: Emergency room $\$800$\\
+Feb. 14: Office Visit $\$100$\\
+Apr. 13: Surgery      $\$1400$\\
+June 14: Surgery      $\$7500$\\
+July 1: Office visit   $\$100$\\
+September 23 Emergency room $\$1200$\\
+\begin{parts}
+	\part[5] Determine your annual health care expenses if you have plan A.  
+	
+	\vspace{8cm}
+	\part[5] Determine your annual health care expenses if you have plan B.
+	\vspace{8cm}
+	\part[5]Determine your health care expenses if you have no health insurance. Does have no health insurance create any other risks for you? Explain.
+\end{parts}
+
+\addpoints
+\question[8] Determine the validity of the following statement. \\
+Premise: If taxes are cut the U.S. Government will have less revenue. \\
+Premises: If there is less revenue, then the federal deficit will be larger.\\
+Conclusion: Tax cuts will lead to a larger federal deficit.\\
+\vspace{10cm}
+
+Bonus:
+\question[5] Determine the truth of the following premises, and check whether it is sound or not, Also present in the Venn-diagram. \\
+Premise: All queens are woman. \\
+Premises: Meryl Streep is a woman.\\
+Conclusion: Meryl Streep is a queen. \\
+\end{questions}
+\end{document}
