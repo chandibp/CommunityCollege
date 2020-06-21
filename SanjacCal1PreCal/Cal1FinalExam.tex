@@ -1,0 +1,232 @@
+% Exam Template for San Jacinto Community College Math Department courses
+%Copyright@Chandi Bhandari
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% These lines can probably stay unchanged, although you can remove the last
+% two packages if you're not making pictures with tikz.
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Math 2413 Calculus-I}
+\newcommand{\term}{Summer 2018}
+\newcommand{\examnum}{Final Exam}
+\newcommand{\examdate}{August, 2018}
+\newcommand{\timelimit}{90 Minutes}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{3.2in} r l}
+\textbf{\class} & \textbf{\term} & \textbf{\examnum}\\
+\textbf{G-Number-} & \textbf{Name (Print):}  \makebox[1.2in]{\hrulefill}\\
+%\textbf{Time: \timelimit} % & \makebox[2in]{\hrulefill}
+
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+\hfill
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%For the further information 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+	
+
+
+\addpoints
+\question[4]Find the value of unknown $a$ such that the function $f$ is continuous at the given points
+
+
+\begin{center}
+	\[f(x)= \begin{cases} 
+	3x^2 & for \quad  x\geq 1 \\
+	ax-4 & for \quad x<1 
+	\end{cases}
+	\mbox{at  x=1}
+	\]
+\end{center} 
+	
+\newpage
+
+%\vspace{8cm}
+\addpoints
+\question[8] For the function f(x) given in the graph, evaluate the following (if they exit)
+
+\begin{center}
+	\includegraphics{limconti1.png}	
+\end{center}
+\begin{parts}
+	\part  $\lim\limits_{x\to -2}f(x)=$
+	\vspace{1cm}
+	\part  $\lim\limits_{x\to 1}f(x)=$
+	\vspace{1cm}
+	\part  $\lim\limits_{x\to 2}f(x)=$
+	\vspace{1cm}
+	\part  $\lim\limits_{x\to3}f(x)=$
+
+	\vspace{1cm}
+	\part  Is $f(x)$ is continuous at x=0 if not specify the types of discontinuity.
+	\vspace{1cm}
+	\part  Is $f(x)$ is continuous at x=1 if not specify the types of discontinuity.
+	\vspace{1cm}
+	\part  Is $f(x)$ is continuous at x=2 if not specify the types of discontinuity.
+	\vspace{1cm}
+	\part  Is $f(x)$ is continuous at x=3 if not specify the types of discontinuity.
+	
+\end{parts}
+
+\vspace{3cm}
+
+% Basic question
+\addpoints
+\question[6] Write down the definition of the derivative of the function $f(x)$. Find the derivative of $f(x)=2x+3$ by using the definition of derivative. 
+
+\newpage
+\addpoints
+\question[4] Find the derivative of the function $x^3y^3-y=x$
+
+\vspace{8cm}
+\addpoints
+\question[4] Find the slope of tangent line to the graph of $x^3+y^3=6xy-1$ at $(2,3)$.
+
+
+
+
+\newpage
+% Question with parts
+%\newpage
+\addpoints
+\question[10] Find the Domain, Vertical asymptotes, Horizontal asymptotes, intercepts of the graph. Find all the critical points, interval of increasing and decreasing, locate fhe point at which $f(x)$ has local maximum and local minimum. Find all the point of inflection and also determine the interval on which the graph of the function is concave up and concave down for the graph Also Sketch the graph. \[f(x)=\frac{x+8}{x-7}\]
+
+
+
+
+
+\newpage
+\addpoints
+\question[4] Evaluate the infinite limit
+\[ \lim\limits_{x\to \infty} \frac{5x^3+1}{10x^3-3x^2+7} \]
+
+
+
+
+
+
+\vspace{8cm}
+\addpoints
+\question[4]A farmer plans to fence a rectangular pasture adjacent to a river. The pasture must contain $405,000 m^2$ in order to provide enough grass for the herd. No fencing is needed along the river. What dimension will require the least amount of fencing?
+
+
+
+
+
+
+\newpage
+\addpoints
+\question[4] Calculate the three Iteration of Newton method to approximate a zero of the function using the given initial guess. $x_1=2$. \[f(x)=x^2-5\]
+
+
+\vspace{9cm}
+\addpoints
+\question[4] Approxite the value of $\sqrt{65}$ by using the differential. 
+
+\newpage
+\addpoints
+\question[12] Find the following integration
+\begin{parts}
+\part $\int_{0}^{1} (9x^3-2x^2-6)dx	$
+\vspace{6cm}
+\part $\int \frac{1}{\sqrt{1-x^2}}dx$
+\vspace{5cm}
+\part $\int \frac{x}{\sqrt{1-x^2}}dx$
+\vspace{5cm}
+\part $\int \frac{1}{{7x-8}}dx$
+\end{parts}
+
+\newpage
+\question[6] Find the derivative of the following functions
+\begin{parts}
+	\part $f(x)=3xlnx+2sin^{-1}x$
+	\vspace{5cm}
+	\part $f(x)=xe^{3x^2+1}$
+	\vspace{5cm}
+	\part $ln(\frac{2x}{x-1})$
+	
+\end{parts}
+
+
+\newpage
+\addpoints
+\question[4] A spherical balloon is inflated with gas at the rate of 800 cubic centimeters per minute. Find the rate of change pf the radius when $r=30$cm. (Note: Volume $V=\frac{4}{3}\pi r^3$).
+
+
+\vspace{10cm}
+\addpoints
+\question[4] Find the interval of concavity (concave upward and concave downward)on $[0,2\pi]$ for the function 
+\[f(x)=sinx+cosx\] 
+
+
+
+
+\vspace{10cm}
+\addpoints
+\question[4] Find the Equation of Tangent line for the graph of the function $f(x)=x^4-2x^2+3$  at $(2,3)$.  
+
+
+\vspace{9cm}
+\addpoints
+\question[4] Find the point at which the Tangent of the graph of $f(x)=x^4-2x^2+3$ is horizontal.
+
+\newpage
+\addpoints
+\question[4] Is the Rolles' Theorem can be applied to $f(x)=(x-2)^2(x-3)$  on the interval $[2,3]$ or Not? Give reason.  If Rolle's Theorem can be applied, find all numbers c in the open interval (2,3)such that $f'(c)=0$.
+
+\newpage
+\addpoints
+\question[4]Find the Absolute extrema of the function on the closed interval [-2,1]
+\begin{align*}
+g(x)=\frac{6x^2}{x-2}
+\end{align*}
+
+\vspace{10cm}
+\addpoints
+\question[6] For the function $f(x)=4-x^2$ on the interval [-2,2] with 4 equal intervals. find the following 
+\begin{parts}
+	\part Lower sums $L_p(f)$
+	\part Upper sums $U_p(f)$
+	
+\end{parts}
+
+
+\vspace{8cm}
+\noaddpoints
+\question[5 Bonus] Find the equation of tangent for the following function at the point $P(2, 4)$\[f(x)=lnx-tan^{-1}x\].
+\end{questions}
+\end{document}
